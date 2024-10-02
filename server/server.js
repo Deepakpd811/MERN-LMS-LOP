@@ -13,14 +13,14 @@ const studentCoursesRoutes = require("./routes/student-routes/student-courses-ro
 const studentCourseProgressRoutes = require("./routes/student-routes/course-progress-routes");
 console.log(process.env.PORT);
 const app = express();
-const PORT = 8000 ;
-const MONGO_URI = "mongodb://localhost:27017/lms";
+const PORT = 8080 ;
+const MONGO_URI = "mongodb://localhost:27017/Learning";
 
 app.use(
   cors({
-    origin:5173,
-    methods: ["GET", "POST", "DELETE", "PUT"],
-    allowedHeaders: ["Content-Type", "Authorization"],
+    origin: 'http://localhost:5173', 
+    methods: ['GET', 'POST', 'DELETE', 'PUT'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
   })
 );
 

@@ -5,6 +5,7 @@ export async function registerService(formData) {
     ...formData,
     role: "user",
   });
+  console.log(data)
 
   return data;
 }

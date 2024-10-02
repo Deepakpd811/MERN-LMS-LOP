@@ -83,6 +83,7 @@ export default function AuthProvider({ children }) {
   }, []);
 
   console.log(auth, "gf");
+  console.log({"------------->":signUpFormData})
 
   return (
     <AuthContext.Provider
